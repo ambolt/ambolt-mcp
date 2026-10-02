@@ -34,11 +34,11 @@ Rate limit: 30 requests per minute per IP on the MCP route. For higher volume an
 | `lei_lookup` | Look up a Legal Entity Identifier (LEI) record by 20-character LEI, or search legal entities by name and country. | $0.005 |
 | `nordic_company_lookup` | Look up companies in the Norwegian (Brønnøysund) and Finnish (PRH/YTJ) company registers by registration number or name: name, legal form, industry, address, registration date and status. | $0.005 |
 | `package_vulnerabilities` | Check an npm or PyPI package version against the OSV vulnerability database: advisory ids, aliases (CVE, GHSA), summary, severity label and first fixed version, plus the latest published version. | $0.003 |
-| `solana_swap_quote` | Get a swap quote on Solana through Jupiter: expected output, minimum output after slippage, price impact, route venues and all fees in basis points. | $0.003 |
-| `solana_swap_transaction` | Build an unsigned Solana swap transaction through Jupiter for a wallet you control. | $0.003 |
-| `solana_token_facts` | Verifiable on-chain facts about a Solana token mint: whether the mint and freeze authorities are still set, total supply, decimals, token program, and how much of the supply the largest token accounts hold, plus public market metrics from Jupiter. | $0.01 |
-| `solana_token_price` | Current USD price, 24-hour change, liquidity and decimals for up to 50 Solana token mints in one call, from Jupiter. | $0.003 |
-| `solana_token_search` | Find Solana tokens by symbol, name or mint address: mint, decimals, verification flag, Jupiter organic score, liquidity, market cap and holder count. | $0.003 |
+| `solana_swap_quote` | Get a swap quote on Solana through a DEX aggregator: expected output, minimum output after slippage, price impact, route venues and all fees in basis points. | $0.003 |
+| `solana_swap_transaction` | Build an unsigned Solana swap transaction through a DEX aggregator for a wallet you control. | $0.003 |
+| `solana_token_facts` | Verifiable on-chain facts about a Solana token mint: whether the mint and freeze authorities are still set, total supply, decimals, token program, and how much of the supply the largest token accounts hold, plus public market metrics from a token index. | $0.01 |
+| `solana_token_price` | Current USD price, 24-hour change, liquidity and decimals for up to 50 Solana token mints in one call, from an aggregated market feed. | $0.003 |
+| `solana_token_search` | Find Solana tokens by symbol, name or mint address: mint, decimals, verification flag, organic score, liquidity, market cap and holder count. | $0.003 |
 | `ted_notices_search` | Find recent EU public procurement notices from TED (Tenders Electronic Daily) by buyer country, CPV code, keyword and notice type. | $0.01 |
 | `url_to_markdown` | Fetch a public web page and return its main text as Markdown with title, headings, lists, tables and absolute links. | $0.003 |
 | `us_treasury_rates` | Monthly average interest rates on US Treasury marketable securities (bills, notes, bonds, TIPS, FRNs) from the US Treasury Fiscal Data API. | $0.003 |
