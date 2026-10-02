@@ -14,7 +14,7 @@ Pay-per-call data and lookup tools for AI agents and developers, as an MCP serve
 
 Rate limit: 30 requests per minute per IP on the MCP route. For higher volume and a payment-secured API, use the HTTP endpoints with the x402 protocol (USDC on Base): see https://ambolt.dev.
 
-## Tools (24)
+## Tools (25)
 
 | Tool | What it returns | Price per call over HTTP (x402) |
 |---|---|---|
@@ -36,6 +36,7 @@ Rate limit: 30 requests per minute per IP on the MCP route. For higher volume an
 | `package_vulnerabilities` | Check an npm or PyPI package version against the OSV vulnerability database: advisory ids, aliases (CVE, GHSA), summary, severity label and first fixed version, plus the latest published version. | $0.003 |
 | `solana_swap_quote` | Get a swap quote on Solana through Jupiter: expected output, minimum output after slippage, price impact, route venues and all fees in basis points. | $0.003 |
 | `solana_swap_transaction` | Build an unsigned Solana swap transaction through Jupiter for a wallet you control. | $0.003 |
+| `solana_token_facts` | Verifiable on-chain facts about a Solana token mint: whether the mint and freeze authorities are still set, total supply, decimals, token program, and how much of the supply the largest token accounts hold, plus public market metrics from Jupiter. | $0.01 |
 | `solana_token_price` | Current USD price, 24-hour change, liquidity and decimals for up to 50 Solana token mints in one call, from Jupiter. | $0.003 |
 | `solana_token_search` | Find Solana tokens by symbol, name or mint address: mint, decimals, verification flag, Jupiter organic score, liquidity, market cap and holder count. | $0.003 |
 | `ted_notices_search` | Find recent EU public procurement notices from TED (Tenders Electronic Daily) by buyer country, CPV code, keyword and notice type. | $0.01 |
