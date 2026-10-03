@@ -12,6 +12,12 @@ Pay-per-call data and lookup tools for AI agents and developers, as an MCP serve
 { "mcpServers": { "ambolt": { "url": "https://api.ambolt.dev/mcp" } } }
 ```
 
+For clients that only speak stdio (Claude Desktop, many IDE agents), use the bridge package; it forwards to the same hosted server and needs no API key:
+
+```json
+{ "mcpServers": { "ambolt": { "command": "npx", "args": ["-y", "@ambolt/mcp"] } } }
+```
+
 Rate limit: 30 requests per minute per IP on the MCP route. For higher volume and a payment-secured API, use the HTTP endpoints with the x402 protocol (USDC on Base): see https://ambolt.dev.
 
 ## Tools (37)

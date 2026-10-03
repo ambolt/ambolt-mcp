@@ -1,0 +1,32 @@
+{
+  "name": "@ambolt/mcp",
+  "version": "0.1.0",
+  "description": "stdio bridge to the hosted Ambolt MCP server: company registers, tenders, documents, rates, on-chain facts and a non-custodial Solana swap, each answer with source and date",
+  "mcpName": "dev.ambolt/ambolt",
+  "type": "module",
+  "bin": {
+    "ambolt-mcp": "bin/ambolt-mcp.mjs"
+  },
+  "files": [
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "x402",
+    "company-data",
+    "solana"
+  ],
+  "license": "MIT",
+  "homepage": "https://ambolt.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambolt/ambolt-mcp.git"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
