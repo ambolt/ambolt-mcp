@@ -14,7 +14,7 @@ Pay-per-call data and lookup tools for AI agents and developers, as an MCP serve
 
 Rate limit: 30 requests per minute per IP on the MCP route. For higher volume and a payment-secured API, use the HTTP endpoints with the x402 protocol (USDC on Base): see https://ambolt.dev.
 
-## Tools (36)
+## Tools (37)
 
 | Tool | What it returns | Price per call over HTTP (x402) |
 |---|---|---|
@@ -29,9 +29,10 @@ Rate limit: 30 requests per minute per IP on the MCP route. For higher volume an
 | `dns_lookup` | Resolve public DNS records for a domain (A, AAAA, MX, TXT, NS, CNAME) and report whether SPF and DMARC records are present, with their policies. | $0.003 |
 | `doi_lookup` | Scholarly metadata by DOI, or a best-match search by citation text: title, authors, journal, year, publisher, citation count, licence links and URL. Bibliographic facts only. | $0.003 |
 | `domain_rdap` | Look up a domain in the public RDAP registry: registration, last-changed and expiry dates, status codes, nameservers, DNSSEC flag and registrar name. | $0.003 |
+| `domain_ssl_sweep` | Check SSL certificate and domain registration expiry for one domain or a whole list: certificate issuer, valid from and to, days left, trusted or not, domain registration and expiry dates, registrar and nameservers. | $0.005 |
 | `ecb_key_rates` | The three ECB key interest rates with their latest change dates and recent history. | $0.003 |
 | `ens_resolve` | Resolve an ENS name (e.g. | $0.003 |
-| `entity_resolve` | Resolve a company name, website domain, registry number, LEI or VAT number to its official legal entity: registry, registry number, legal form, status, address, industry codes, size where published and LEI. Searches national registers (Norway, Finland, Czechia, France) and GLEIF, scores the match and links every record to its source. | $0.01 |
+| `entity_resolve` | Resolve a company name, website domain, registry number, LEI or VAT number to its official legal entity: registry, registry number, legal form, status, address, industry codes, size where published and LEI. Searches national registers (Norway, Finland, Czechia, Slovakia, France, UK; Poland by KRS number) and GLEIF, scores the match and links every record to its source. | $0.01 |
 | `eu_vat_validate` | Check whether an EU VAT number is valid and active. | $0.003 |
 | `fx_rate_ecb` | European Central Bank euro foreign-exchange reference rates for any date since 1999, converted to any base currency. | $0.003 |
 | `iban_validate` | Validate an IBAN offline: ISO 13616 checksum (mod 97), registered length for the country, and a normalised and grouped format. | $0.003 |
