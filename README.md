@@ -20,7 +20,7 @@ For clients that only speak stdio (Claude Desktop, many IDE agents), use the bri
 
 Rate limit: 30 requests per minute per IP on the MCP route. For higher volume and a payment-secured API, use the HTTP endpoints with the x402 protocol (USDC on Base): see https://ambolt.dev.
 
-## Tools (35)
+## Tools (37)
 
 | Tool | What it returns | Price per call over HTTP (x402) |
 |---|---|---|
@@ -47,6 +47,8 @@ Rate limit: 30 requests per minute per IP on the MCP route. For higher volume an
 | `package_vulnerabilities` | Check an npm or PyPI package version against a public vulnerability database: advisory ids, aliases (CVE, GHSA), summary, severity label and first fixed version, plus the latest published version. | $0.003 |
 | `rss_feed_normaliser` | Turn any RSS 2.0, RSS 1.0, Atom or JSON Feed into one clean JSON schema: feed title, link and language, then items with id, title, URL, ISO published/updated dates, summary, categories and enclosure. | $0.003 |
 | `sitemap_robots_doctor` | Audit a website's robots.txt and XML sitemaps in one call: user-agent groups and blocked paths, sitemap declarations, whether each sitemap loads, URL counts (indexes followed to 10 files), lastmod coverage and age, duplicates, off-host and non-HTTPS URLs, size-limit breaches, and a sample of listed URLs checked for status. | $0.005 |
+| `solana_swap_quote` | Get a swap quote on Solana through a DEX aggregator: expected output, minimum output after slippage, price impact, route venues and all fees in basis points. | free |
+| `solana_swap_transaction` | Build an unsigned Solana swap transaction through a DEX aggregator for a wallet you control. | free |
 | `solana_token_facts` | Verifiable on-chain facts about a Solana token mint: whether the mint and freeze authorities are still set, total supply, decimals, token program, and how much of the supply the largest token accounts hold, plus public market metrics from a token index. | $0.01 |
 | `solana_token_price` | Current USD price, 24-hour change, liquidity and decimals for up to 50 Solana token mints in one call, from an aggregated market feed. | $0.003 |
 | `solana_token_search` | Find Solana tokens by symbol, name or mint address: mint, decimals, verification flag, organic score, liquidity, market cap and holder count. | $0.003 |

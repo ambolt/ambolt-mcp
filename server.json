@@ -3,7 +3,7 @@
   "name": "dev.ambolt/ambolt",
   "description": "Data lookups, on-chain facts and a non-custodial Solana swap for agents. Sourced and dated.",
   "title": "Ambolt",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "websiteUrl": "https://ambolt.dev",
   "remotes": [
     {
