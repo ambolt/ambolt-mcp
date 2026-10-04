@@ -6,6 +6,11 @@ Pay-per-call data and lookup tools for AI agents and developers, as an MCP serve
 - **Website and docs**: https://ambolt.dev
 - **Registry name**: `dev.ambolt/ambolt`
 
+## What is in this repository
+
+- `bin/ambolt-local.mjs`: a complete MCP server (stdio) whose five tools run in this repository's code, with no Ambolt account or hosted service: `iban_validate` (offline), `disposable_email_check`, `dns_lookup`, `fx_rate_ecb` and `package_vulnerabilities`. Source in `functions/` and `src/`; run it with `npx -y -p @ambolt/mcp ambolt-local` or `node bin/ambolt-local.mjs`.
+- `bin/ambolt-mcp.mjs`: the bridge to the hosted server with all 37 tools (see the table below). The hosted server's other tools (company registers, tenders, on-chain facts, Solana swap and so on) run on Ambolt's infrastructure and are not part of this repository.
+
 ## Connect
 
 ```json

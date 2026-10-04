@@ -5,10 +5,13 @@
   "mcpName": "dev.ambolt/ambolt",
   "type": "module",
   "bin": {
-    "ambolt-mcp": "bin/ambolt-mcp.mjs"
+    "ambolt-mcp": "bin/ambolt-mcp.mjs",
+    "ambolt-local": "bin/ambolt-local.mjs"
   },
   "files": [
     "bin",
+    "src",
+    "functions",
     "README.md",
     "LICENSE"
   ],
