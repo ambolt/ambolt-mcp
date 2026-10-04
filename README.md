@@ -71,4 +71,4 @@ Informational only, not financial, legal or tax advice. Crypto tools are read-on
 
 ## License
 
-The documentation in this repository is MIT licensed. The service itself is operated by Ambolt.
+The code and documentation in this repository are MIT licensed. The hosted service is operated by Ambolt.
