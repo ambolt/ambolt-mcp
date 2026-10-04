@@ -1,6 +1,6 @@
 {
   "name": "@ambolt/mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "stdio bridge to the hosted Ambolt MCP server: company registers, tenders, documents, rates, on-chain facts and a non-custodial Solana swap, each answer with source and date",
   "mcpName": "dev.ambolt/ambolt",
   "type": "module",
