@@ -1,5 +1,7 @@
 # Ambolt MCP server
 
+[![SSL expiry](https://ambolt.dev/badge/ssl/ambolt.dev.svg)](https://ambolt.dev/tools/badge-generator) [![Vulnerabilities](https://ambolt.dev/badge/vulns.svg?ecosystem=npm&name=%40ambolt%2Fmcp&version=0.2.0)](https://ambolt.dev/tools/badge-generator)
+
 Pay-per-call data and lookup tools for AI agents and developers, as an MCP server. Every result names its source and the time it was fetched.
 
 - **MCP endpoint** (streamable HTTP, JSON-RPC): `https://api.ambolt.dev/mcp`
