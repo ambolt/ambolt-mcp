@@ -27,7 +27,7 @@ For clients that only speak stdio (Claude Desktop, many IDE agents), use the bri
 
 Rate limit: 30 requests per minute per IP on the MCP route. For higher volume and a payment-secured API, use the HTTP endpoints with the x402 protocol (USDC on Base): see https://ambolt.dev.
 
-## Tools (37)
+## Tools (38)
 
 | Tool | What it returns | Price per call over HTTP (x402) |
 |---|---|---|
@@ -36,6 +36,7 @@ Rate limit: 30 requests per minute per IP on the MCP route. For higher volume an
 | `base_token_info` | Basic facts about an ERC-20 token contract on Base mainnet: name, symbol, decimals and total supply (raw and formatted), read live via eth_call. | $0.003 |
 | `base_transaction` | Look up a transaction on Base by hash: success or revert, block and time, sender, recipient, ETH value, gas and fee, the called method selector, and decoded ERC-20 transfers with token symbols. | $0.005 |
 | `base_wallet_balances` | ETH balance and balances of major tokens (USDC, WETH, cbBTC, DAI, USDbC, cbETH, AERO) for any address on Base, plus any extra token contracts you list. | $0.005 |
+| `brazil_cnpj_lookup` | Look up a Brazilian company by its 14-digit CNPJ number (with or without dots, slash and dash): legal name, trade name, legal form, active or closed status, start date, address, CNAE industry code and size class, from the Receita Federal open data. | $0.005 |
 | `disposable_email_check` | Fast email address check without sending anything: syntax, domain MX records, disposable/temporary-mail domain (9,000+ listed), role address (info@, admin@) and likely typo of a popular provider. | $0.003 |
 | `dk_co2_intensity` | CO2 emissions per kWh of electricity consumed in Denmark (DK1 West, DK2 East), latest 5-minute value plus 24-hour average, cleanest and dirtiest times. | $0.005 |
 | `dk_electricity_prices` | Day-ahead electricity spot prices for one day and bidding area, in EUR and DKK per MWh, quarter-hourly or hourly, with min/max/average and the cheapest hours. | $0.01 |
@@ -45,7 +46,7 @@ Rate limit: 30 requests per minute per IP on the MCP route. For higher volume an
 | `domain_ssl_sweep` | Check SSL certificate and domain registration expiry for one domain or a whole list: certificate issuer, valid from and to, days left, trusted or not, domain registration and expiry dates, registrar and nameservers. | $0.005 |
 | `ecb_key_rates` | The three ECB key interest rates with their latest change dates and recent history. | $0.003 |
 | `ens_resolve` | Resolve an ENS name (e.g. | $0.003 |
-| `entity_resolve` | Resolve a company name, website domain, registry number, LEI or VAT number to its official legal entity: registry, registry number, legal form, status, address, industry codes, size where published and LEI. Searches national registers (Norway, Finland, Czechia, Slovakia, France, UK; Poland by KRS number) and GLEIF, scores the match and links every record to its source. | $0.01 |
+| `entity_resolve` | Resolve a company name, website domain, registry number, LEI or VAT number to its official legal entity: registry, registry number, legal form, status, address, industry codes, size where published and LEI. Searches national registers (Norway, Finland, Czechia, Slovakia, France, UK, Latvia, Estonia; Poland by KRS number; Brazil by CNPJ) and GLEIF, scores the match and links every record to its source. | $0.01 |
 | `eu_vat_validate` | Check whether an EU VAT number is valid and active. | $0.003 |
 | `fx_rate_ecb` | European Central Bank euro foreign-exchange reference rates for any date since 1999, converted to any base currency. | $0.003 |
 | `iban_validate` | Validate an IBAN offline: ISO 13616 checksum (mod 97), registered length for the country, and a normalised and grouped format. | $0.003 |
