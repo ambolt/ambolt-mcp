@@ -3,7 +3,7 @@
   "name": "dev.ambolt/ambolt",
   "description": "Company registers, financials, funding rounds, tenders and industry codes. Sourced and dated.",
   "title": "Ambolt",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "websiteUrl": "https://ambolt.dev",
   "remotes": [
     {
